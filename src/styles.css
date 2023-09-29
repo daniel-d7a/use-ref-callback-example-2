@@ -1,0 +1,43 @@
+body {
+  background-color: #111;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.image-carousel {
+  height: 350px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+img {
+  object-fit: contain;
+  height: 100%;
+}
+
+button {
+  padding: 10px 16px;
+  text-transform: capitalize;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.container-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
