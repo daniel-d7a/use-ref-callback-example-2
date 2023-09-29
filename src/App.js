@@ -26,17 +26,19 @@ export default function App() {
 
       <div className="container-row">
         {images.map((image, index) => (
-          <button
+          <img
+            key={image}
+            alt="thumbnail"
+            width="50px"
+            src={`${BaseUrl}${image}`}
             onClick={() => {
               imagesRef.current.get(index).scrollIntoView({
                 behavior: "smooth",
                 block: "nearest",
-                inline: "center"
+                inline: "center",
               });
             }}
-          >
-            scroll to index {index + 1}
-          </button>
+          />
         ))}
       </div>
     </div>
@@ -53,5 +55,5 @@ const images = [
   "SU6MbWxLozY",
   "yxyIwykexwg",
   "140cHe0oS58",
-  "TdONq3n-PUA"
+  "TdONq3n-PUA",
 ];
